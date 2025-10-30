@@ -73,6 +73,7 @@ const Home: NextPage = () => {
         
         
         <div className={styles.App2}>
+        <img>{`${buffdata}`}</img>
         <p>{`${buffdata}`}</p>
         </div> 
       </header>
