@@ -26,7 +26,7 @@ const Home: NextPage = () => {
           //CHANGES WERE MADE HERE
           var beforeSanitized = info!.data.toString()
           let index = beforeSanitized.indexOf("data");
-          let indexend = beforeSanitized.indexOf("","attributes");
+          let indexend = beforeSanitized.indexOf('","attributes');
           //let index = beforeSanitized.indexOf("");
           let valSanitised = beforeSanitized.substring(index,indexend);
 
