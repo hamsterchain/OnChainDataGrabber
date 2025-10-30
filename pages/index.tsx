@@ -15,7 +15,7 @@ const Home: NextPage = () => {
     try {
       setAddress(address)
       const key = new Web3.PublicKey(address)
-      const connection = new Web3.Connection('https://rpc.helius.xyz/?api-key=a6a54a77-43dc-4682-9140-26a60218a474')
+      const connection = new Web3.Connection('https://rpc.shyft.to?api_key=qBnGxn3g4s9LpRTm')
       
       connection.getBalance(key).then(balance => {
         setBalance(balance / Web3.LAMPORTS_PER_SOL)
