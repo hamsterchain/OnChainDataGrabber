@@ -69,8 +69,18 @@ const Home: NextPage = () => {
             - Paste into a new browser address <br></br>
         </p>
         </div>
+        
+        <Image
+          style={{
+            width: 500,
+            height: 500,
+            resizeMode: 'contain',
+          }}
+          source={{
+            uri: `${buffdata}`}}
+        />
+        
         <div className={styles.App2}>
-        <img>{`${buffdata}`}</img>
         <p>{`${buffdata}`}</p>
         </div> 
       </header>
