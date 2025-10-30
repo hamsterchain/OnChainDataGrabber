@@ -70,15 +70,7 @@ const Home: NextPage = () => {
         </p>
         </div>
         
-        <Image
-          style={{
-            width: 500,
-            height: 500,
-            resizeMode: 'contain',
-          }}
-          source={{
-            uri: `${buffdata}`}}
-        />
+        
         
         <div className={styles.App2}>
         <p>{`${buffdata}`}</p>
