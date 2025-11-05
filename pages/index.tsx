@@ -32,7 +32,7 @@ const Home: NextPage = () => {
           //let valSanitised = beforeSanitized.substring(index);
 
           //setData(valSanitised);
-          setData(beforeSanitised);
+          setData(beforeSanitized);
         } catch (error){
           setData('No data found on this address!')
         }
