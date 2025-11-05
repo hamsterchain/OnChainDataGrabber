@@ -28,7 +28,11 @@ const Home: NextPage = () => {
           let index = beforeSanitized.indexOf("data");
           let indexend = beforeSanitized.indexOf('","attributes');
           //let index = beforeSanitized.indexOf("");
+          try{
           let valSanitised = beforeSanitized.substring(index,indexend);
+          }catch (error){
+          let valSanitised = beforeSanitized.substring(index);
+          }
 
           setData(valSanitised);
         } catch (error){
