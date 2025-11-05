@@ -25,13 +25,14 @@ const Home: NextPage = () => {
         try{
           //CHANGES WERE MADE HERE
           var beforeSanitized = info!.data.toString()
-          let index = beforeSanitized.indexOf("data");  
-          let indexend = beforeSanitized.indexOf('","attributes');
+          //let index = beforeSanitized.indexOf("data");  
+          //let indexend = beforeSanitized.indexOf('","attributes');
           
           //let index = beforeSanitized.indexOf("");
-          let valSanitised = beforeSanitized.substring(index);
+          //let valSanitised = beforeSanitized.substring(index);
 
-          setData(valSanitised);
+          //setData(valSanitised);
+          setData(beforeSanitised);
         } catch (error){
           setData('No data found on this address!')
         }
