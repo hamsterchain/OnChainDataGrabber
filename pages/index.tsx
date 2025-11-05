@@ -29,7 +29,7 @@ const Home: NextPage = () => {
           let indexend = beforeSanitized.indexOf('","attributes');
           
           //let index = beforeSanitized.indexOf("");
-          let valSanitised = beforeSanitized.substring(index,indexend);
+          let valSanitised = beforeSanitized.substring(index);
 
           setData(valSanitised);
         } catch (error){
@@ -58,7 +58,7 @@ const Home: NextPage = () => {
         <div className={styles.App3}>
         <p>
           You need the image container address! <br></br>
-          try: E663ZsGzckou1Lw8nmyTZkgyg1E9j6DTGD5ja8nYib2N<br></br>
+          try: 4gs9Mu1dXjxq66buDXPgB619yvXXJDkEnPcsaDU5rxyh<br></br>
         </p>
         </div>
         <AddressForm handler={addressSubmittedHandler} />
